@@ -13,7 +13,7 @@ const SECRET_KEY = 'secretkey'
 const app = express();
 
 // Connect to MongoDB
-const dbURI = 'mongodb+srv://JerryLin:JerryLin123@cluster0.stnbrne.mongodb.net/UsersDB?retryWrites=true&w=majority';
+const dbURI = 'mongodb+srv://JerryLin:JerryLin123@cluster0.stnbrne.mongodb.net/';
 mongoose.connect(dbURI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
