@@ -15,8 +15,7 @@ const app = express();
 // Connect to MongoDB
 const dbURI = 'mongodb+srv://JerryLin:JerryLin123@cluster0.stnbrne.mongodb.net/UsersDB?retryWrites=true&w=majority';
 mongoose.connect(dbURI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true
+    
 })
 .then(() => {
     app.listen(3001, () => { // Port 3001, React default port is 3000
