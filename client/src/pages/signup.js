@@ -11,7 +11,7 @@ function SignUp() {
 	const navigate = useNavigate();
 
 	useEffect(() => {
-		fecthUsers();
+		fetchUsers();
 	}, [])
 
 	const fecthUsers = () => {
