@@ -7,13 +7,13 @@ const bcrypt = require('bcrypt'); // User auth - hash and store password
 const jwt = require('jsonwebtoken'); // Token that follows user when signed in & removed when signed out
 const User = require('./models/userSchema'); 
 
-const SECRET_KEY = 'secretkey'
+const SECRET_KEY = process.env.SECRET_KEY;
 
 // Connect to Express app
 const app = express();
 
 // Connect to MongoDB
-const MONGODB_URI = 'mongodb+srv://JerryLin:JerryLin123@cluster0.stnbrne.mongodb.net/UsersDB?retryWrites=true&w=majority';
+const MONGODB_URI = process.env.MONGODB_URI;
 mongoose.connect(MONGODB_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true
