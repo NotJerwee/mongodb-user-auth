@@ -14,7 +14,7 @@ function SignUp() {
 		fetchUsers();
 	}, [])
 
-	const fecthUsers = () => {
+	const fetchUsers = () => {
 		axios.get("http://localhost:3001/register")
 		.then((res) => {
 			console.log(res.data)
@@ -28,7 +28,7 @@ function SignUp() {
 			setEmail('')
 			setUsername('')
 			setPassword('')
-			fecthUsers()
+			fetchUsers()
 			navigate('/login')
 		}) .catch((error) => {
 			console.log('Unable to register user')
