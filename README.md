@@ -42,9 +42,25 @@ cd server
 npm install
 ```
 
+3. Start the development server:
+```
+npm start
+```
 
+## Client Setup
+1. Navigate to the client directory:
+```
+cd client
+```
 
+2. Install the necessary packages:
+```
+npm install
+```
 
+3. Start the development server:
+```
+npm start
+```
 
-
-
+# Tech Stack
