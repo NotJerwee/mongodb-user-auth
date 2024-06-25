@@ -14,8 +14,25 @@ or download zip folder and extract it.
 cd mongodb-user-auth
 ```
 
+### MongoDB Setup
+1. Create a New Project
+
+2. Create a cluser
+
+3. Create user
+- Recieve collection string
+
+
+- Create a .env file in the root directory.
+- Replace `your_mongodb_connection_string` and `your_secret_key` with your actual MongoDB connection string and a secret key for JWT.
+```
+MONGODB_URI=your_mongodb_connection_string
+SECRET_KEY=your_secret_key
+```
+
+
 ## Server Setup
-1. Navigate to the server directory (assuming you are in the root of the project):
+1. Navigate to the server directory:
 ```
 cd server
 ```
@@ -24,15 +41,6 @@ cd server
 ```
 npm install
 ```
-
-### MongoDB Setup
-- Create a .env file in the root directory.
-- Replace `your_mongodb_connection_string` and `your_secret_key` with your actual MongoDB connection string and a secret key for JWT.
-```
-MONGODB_URI=your_mongodb_connection_string
-SECRET_KEY=your_secret_key
-```
-
 
 
 
