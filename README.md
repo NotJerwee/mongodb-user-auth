@@ -2,9 +2,6 @@
 
 A template to create a user authentication using MongoDB
 
-# Pre-requisites
-
-
 # Installation
 1. Clone the repository:
 ```
@@ -30,16 +27,17 @@ cd mongodb-user-auth
    - Add your current IP address to allow connections to the database.
 
 5. **Connect Your Application**:
+   - In the root of your project, create a `.env` file and add the following lines, replacing placeholders with your actual data:
+     ```
+     MONGODB_URI=your_mongodb_connection_string
+     SECRET_KEY=your_secret_key
+     ```
    - Find your connection string in the "Connect" section of your cluster.
    - Replace `your_mongodb_connection_string` in your `.env` file with your actual connection string formatted as follows:
      ```
      mongodb+srv://username:password@your-cluster-url/test?retryWrites=true&w=majority
      ```
    - Replace `your_secret_key` with a secret key of your choice for JWT.
-```
-MONGODB_URI=your_mongodb_connection_string
-SECRET_KEY=your_secret_key
-```
 
 ## Server Setup
 1. Navigate to the server directory:
