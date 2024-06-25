@@ -1,6 +1,9 @@
-# mongodb-user-auth
+# MongoDB-User-Auth
 
 A template to create a user authentication using MongoDB
+
+# Pre-requisites
+
 
 # Installation
 1. Clone the repository:
@@ -13,23 +16,30 @@ or download zip folder and extract it.
 ```
 cd mongodb-user-auth
 ```
+### MongoDB Setup
+1. **Create a New Project**: Sign up or log in at [MongoDB](https://www.mongodb.com) and create a new project.
 
-### MongoDB Setup 
-1. Create a New Project @ https://www.mongodb.com
+2. **Create a Cluster**: Follow the steps to create a new cluster. For a free tier, you can select the shared cluster option which is sufficient for development purposes.
 
-2. Create a cluser
+3. **Create a Database User**:
+   - Navigate to the "Database Access" section under "Security".
+   - Add a new database user with read and write access to any database. Remember the username and password as you will need them for the connection string.
 
-3. Create user:
-- Recieve collection string
+4. **Whitelist Your IP Address**:
+   - Go to the "Network Access" section.
+   - Add your current IP address to allow connections to the database.
 
-4. Configure MongoDB in your application:
-- Create a .env file in the root directory.
-- Replace `your_mongodb_connection_string` and `your_secret_key` with your actual MongoDB connection string and a secret key for JWT.
+5. **Connect Your Application**:
+   - Find your connection string in the "Connect" section of your cluster.
+   - Replace `your_mongodb_connection_string` in your `.env` file with your actual connection string formatted as follows:
+     ```
+     mongodb+srv://username:password@your-cluster-url/test?retryWrites=true&w=majority
+     ```
+   - Replace `your_secret_key` with a secret key of your choice for JWT.
 ```
 MONGODB_URI=your_mongodb_connection_string
 SECRET_KEY=your_secret_key
 ```
-
 
 ## Server Setup
 1. Navigate to the server directory:
