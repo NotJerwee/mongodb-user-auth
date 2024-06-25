@@ -14,15 +14,16 @@ or download zip folder and extract it.
 cd mongodb-user-auth
 ```
 
-### MongoDB Setup
+### MongoDB Setup 
 1. Create a New Project
+- https://www.mongodb.com
 
 2. Create a cluser
 
-3. Create user
+3. Create user:
 - Recieve collection string
 
-
+4. Configure MongoDB in your application:
 - Create a .env file in the root directory.
 - Replace `your_mongodb_connection_string` and `your_secret_key` with your actual MongoDB connection string and a secret key for JWT.
 ```
