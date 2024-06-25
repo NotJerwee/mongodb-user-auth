@@ -15,8 +15,7 @@ cd mongodb-user-auth
 ```
 
 ### MongoDB Setup 
-1. Create a New Project
-- https://www.mongodb.com
+1. Create a New Project @ https://www.mongodb.com
 
 2. Create a cluser
 
