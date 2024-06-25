@@ -13,7 +13,9 @@ or download zip folder and extract it.
 ```
 cd mongodb-user-auth
 ```
-### MongoDB Setup
+
+
+## MongoDB Setup
 1. **Create a New Project**: Sign up or log in at [MongoDB](https://www.mongodb.com) and create a new project.
 
 2. **Create a Cluster**: Follow the steps to create a new cluster. For a free tier, you can select the shared cluster option which is sufficient for development purposes.
